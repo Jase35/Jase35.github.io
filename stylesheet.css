@@ -1,0 +1,167 @@
+:root{
+    --brandblue: rgb(11, 146, 173);
+    --branddarkerblue: rgb(8, 102, 121);
+    --blackbrown: rgb(48, 39, 25);
+    --offwhite: rgb(255, 245, 230);
+    --linkhighlight: rgb(217, 123, 123);
+    --nameplate: rgb(165, 127, 74);
+
+    --navsize: 24px;
+}
+
+body{
+    background-color: var(--offwhite);
+    font-family: 'Times New Roman';
+    width: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+header{
+    display: inline-flex;
+    background-color: var(--brandblue);
+    width: 100%;
+    height: 16vh;
+}
+
+.parent{
+    overflow-y: hidden;
+}
+
+.full{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.nameplate{
+    font-family: 'Times New Roman';
+    color: var(--nameplate);
+    width: 27%;
+    padding-left: 3%;
+    text-align: start;
+    margin: 0 auto;
+    margin: 0 auto;
+
+    h1{
+        height: 24px;
+    }
+
+    h3{
+        color: black;
+        font-weight: lighter;
+    }
+}
+
+.navigation{
+    width: 50%;
+    text-align: start;
+    margin: 0 auto;
+    display: inline;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+#musicButton{
+    /*width: 20%;*/
+    background-color: var(--brandblue);
+    margin: 32px;
+    padding: 8px;
+    border: 2px dashed var(--branddarkerblue);
+    border-radius: 7px;
+}
+
+#musicButton:hover{
+    border-style: solid;
+}
+
+.navigation li{
+    display: inline-block;
+}
+
+.navigation button{
+    font-family: 'Times New Roman';
+    color: var(--offwhite);
+    background-color: var(--brandblue);
+    font-size: var(--navsize);
+    padding: 8px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    border: 2px dashed var(--branddarkerblue);
+    border-radius: 7px;
+}
+
+.navigation button:hover{
+    /*background-color: rgb(10, 123, 146);*/
+    border-style: solid;
+    /*font-weight: bold;*/
+}
+
+.content{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0 auto;
+}
+
+.content p{
+    line-height: 1.5;
+    font-size: 18px;
+    padding-bottom: 18px;
+}
+
+#frame{
+    margin: 0 auto;
+    padding: 0px;
+    height: 84vh;
+    width: 100%;
+}
+
+a{
+    color: black;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.reference{
+    /*background-color: rosybrown;*/
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 1px solid var(--linkhighlight);
+    border-radius: 3px;
+}
+
+.reference:hover{
+    background-color: var(--linkhighlight);
+    color: var(--offwhite);
+}
+
+footer{
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: var(--blackbrown);
+    color: var(--offwhite);
+    padding: 20px;
+    text-align: center;
+    bottom: 0px;
+}
+
+#musicButtonImg{
+    width: var(--navsize);
+    height: var(--navsize);
+}
+
+.catalogItem{
+    display: inline-block;
+    width: 25%;
+    border: 1px solid var(--brandblue);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaubien Media</title>
+
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body class="parent">
+    <header>
+        <div class="nameplate">
+            <h1>Beaubien Media</h1>
+            <h3><em>Innovation, Creativity, Freedom</em></h3>
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li><button onclick="setPage('./home.html')">Home</button></li>
+                <li><button onclick="setPage('./writings.html')">Writings</button></li>
+                <li><button onclick="setPage('./index.html')">Music</button></li>
+                <li><button onclick="setPage('./about.html')">About</button></li>
+            </ul>
+        </nav>
+
+        <div style="width: 20%">
+            <input type="range" id="volumeSlider" min="0" max="100" value="100" oninput="setVolume(value)"></slider>
+            <button id="musicButton" onclick="toggleMusic()"><img id="musicButtonImg" src="./images/play.png" alt="pause"></button>
+        </div>
+    </header>
+
+    <iframe id="frame" src="./home.html" frameborder="0" allowtransparency="true"></iframe>
+
+    <!--<p>
+        This is a test. This <a class="reference" href="index.html">link</a> is also a test.
+        <br>You can click the link if you want.<br>Or not.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        Bye.
+    </p>-->
+
+    <!--<footer class="bottom">
+        <button id="musicButton" onclick="toggleMusic()"><img id="musicButtonImg" src="./images/play.png" alt="pause"></button>
+    </footer>-->
+
+    <script language="javascript" src="./script.js"></script>
+</body>
+</html>
