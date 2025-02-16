@@ -17,12 +17,10 @@ function toggleMusic(){
 
 function setPage(location){
     try{
-        alert("Page set to: " + location + ", " + document.title + ", " + window.parent.document.title);
         let doc = window.parent.document;
         doc.getElementById("frame").src = location;
         doc.getElementById("frame").height = location.height;
     }catch(e){
-        alert("Bruh: " + e);
     }
 }
 
